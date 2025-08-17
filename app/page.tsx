@@ -14,9 +14,9 @@ export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const heroImages = [
-    "/placeholder.svg?height=600&width=1200&text=Meghalaya+Living+Root+Bridges",
-    "/placeholder.svg?height=600&width=1200&text=Tokyo+Skyline",
-    "/placeholder.svg?height=600&width=1200&text=Ladakh+Mountains",
+    "/placeholder3.svg?height=600&width=1200&text=Meghalaya+Living+Root+Bridges",
+    "/placeholder1.svg?height=600&width=1200&text=Tokyo+Skyline",
+    "/placeholder2.svg?height=600&width=1200&text=Ladakh+Mountains",
     "/placeholder.svg?height=600&width=1200&text=Santorini+Sunset",
   ]
 
@@ -24,25 +24,25 @@ export default function HomePage() {
     {
       name: "Meghalaya",
       country: "India",
-      image: "/placeholder.svg?height=300&width=400&text=Meghalaya",
+      image: "/placeholder3.svg?height=300&width=400&text=Meghalaya",
       rating: 4.8,
-      price: "$$$",
+      price: "Rs",
       highlights: ["Living Root Bridges", "Cherrapunji", "Shillong"],
     },
     {
       name: "Tokyo",
       country: "Japan",
-      image: "/placeholder.svg?height=300&width=400&text=Tokyo",
+      image: "/placeholder1.svg?height=300&width=400&text=Tokyo",
       rating: 4.7,
-      price: "$$$$",
+      price: "Rs",
       highlights: ["Shibuya Crossing", "Tokyo Tower", "Senso-ji Temple"],
     },
     {
       name: "Ladakh",
       country: "India",
-      image: "/placeholder.svg?height=300&width=400&text=Ladakh",
+      image: "/placeholder2.svg?height=300&width=400&text=Ladakh",
       rating: 4.6,
-      price: "$$",
+      price: "Rs",
       highlights: ["Pangong Lake", "Leh Palace", "Magnetic Hill"],
     },
   ]

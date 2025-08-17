@@ -29,7 +29,7 @@ export default function Dashboard() {
       dates: "Jan 10-17, 2025",
       status: "Planning",
       progress: 45,
-      image: "/placeholder.svg?height=200&width=300&text=Tokyo",
+      image: "/placeholder2.svg?height=200&width=300&text=Tokyo",
       travelers: 4,
       budget: "$4,200",
     },
