@@ -44,9 +44,9 @@ export default function Hotels() {
 
   const priceRanges = [
     { value: "all", label: "All Prices" },
-    { value: "budget", label: "Under rs100" },
-    { value: "mid", label: "rs100 - rs300" },
-    { value: "luxury", label: "rs300+" },
+    { value: "budget", label: "Under $100" },
+    { value: "mid", label: "$100 - $300" },
+    { value: "luxury", label: "$300+" },
   ]
 
   const mockHotels: HotelData[] = [
@@ -55,7 +55,7 @@ export default function Hotels() {
       name: "Grand Palace Hotel",
       location: "Paris, France",
       description: "Luxury hotel in the heart of Paris with stunning city views",
-      image: "/Grand Palace Hotel.svg?height=200&width=300&text=Grand+Palace",
+      image: "/grandpalace.svg?height=200&width=300&text=Grand+Palace",
       rating: 4.8,
       price: 450,
       originalPrice: 520,
@@ -69,7 +69,7 @@ export default function Hotels() {
       name: "Sakura Boutique Inn",
       location: "Tokyo, Japan",
       description: "Traditional Japanese hospitality meets modern comfort",
-      image: "/Sakura Boutique Innr.svg?height=200&width=300&text=Sakura+Inn",
+      image: "/Sakura Boutique Inn.svg?height=200&width=300&text=Sakura+Inn",
       rating: 4.6,
       price: 280,
       category: "boutique",

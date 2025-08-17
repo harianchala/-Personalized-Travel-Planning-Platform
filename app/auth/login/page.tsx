@@ -12,20 +12,14 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { useAuth } from "@/components/auth/auth-provider"
 import { useToast } from "@/hooks/use-toast"
-import { supabase } from "@/lib/supabaseClient"
 
 export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const login = async (email: string, password: string) => {
-  return await supabase.auth.signInWithPassword({
-    email,
-    password,
-  })
-}
 
+  const { login } = useAuth()   // ✅ use our AuthProvider
   const router = useRouter()
   const { toast } = useToast()
 
@@ -68,7 +62,7 @@ export default function Login() {
         })
         router.push("/dashboard")
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Login Error",
         description: "An unexpected error occurred. Please try again.",
@@ -149,15 +143,10 @@ export default function Login() {
             </form>
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground">
-                Don't have an account?{" "}
+                Don&apos;t have an account?{" "}
                 <Link href="/auth/register" className="text-blue-600 hover:underline font-medium">
                   Sign up
                 </Link>
-              </p>
-            </div>
-            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-950 rounded-lg">
-              <p className="text-xs text-blue-700 dark:text-blue-300 text-center">
-                Demo Mode: Create an account or use any email/password combination
               </p>
             </div>
           </CardContent>
