@@ -42,7 +42,6 @@
     "@stripe/react-stripe-js": "latest",
     "@stripe/stripe-js": "latest",
     "@supabase/supabase-js": "^2.55.0",
-    "@tailwindcss/postcss": "^4.1.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
@@ -69,6 +68,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
