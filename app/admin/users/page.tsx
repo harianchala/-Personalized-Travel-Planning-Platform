@@ -91,7 +91,7 @@ export default function ManageUsers() {
           name: "hari",
           email: "harikailash",
           role: "admin",
-          status: "suspended",
+          status: "active",
           joinDate: "2024-01-30",
           lastLogin: "2024-11-20",
           tripsCount: 0,
